@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>my website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 8px;
+  text-align: center;
+background-color:black; */
+  color:#ddd;
+  height: 400px;
+
+  /* color: #ddd; */
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  color: #ddd;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  color: black;
+  background-color: #3b3a3a;
+}
+.navbar a{
+    color: black;
+}
+p{
+    font-size: 12px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.btn {
+    margin: 15px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  font-size:12px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: justify;
+  font-size:12px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  
+  width: 100%;
+  padding: 20px;
+}
+.ramsha_img{
+    height: 220px;
+    width: 298px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  
+}
+.header img{
+    width: 100%;
+    height: 300px;
+}
+.ull{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    gap: 10%;
+    font-size: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+<body id=abc>
+    <script>
+        function color_change(){
+            document.getElementById("abc").style.color="blue";
+            document.getElementById("side").style.backgroundColor="orange";
+            document.getElementById('abc').style.fontSize="large";    
+        }
+    </script>
+ <div class="navbar">
+    <a href="#">facebook</a>
+    <a href="#">instagram</a>
+    <!-- <a href="#">Link</a> -->
+    <button id="btn" class="btn" onclick="color_change()"> change color</button>
+    <a href="#" >linkedin</a>
+  </div>
+  
+
+<img src="coverimg.jpg" style="width: 100%; height: 300px;" >
+
+
+
+<div class="row">
+  <div class="side">
+    <div class="fakeimg" style="text-align: center;"><img src="ramsha.JPG" alt="ramsha_image" class="ramsha_img">
+        <p> This image is taken from my convocation </p></div>
+    <h2>Hello, everyone! I'm Ramsha, a web developer specializing in Python and Django. I'm excited to be here and share my knowledge and expertise in this field.
+        I have a strong passion for web development and have been working with Python and Django. I find the combination of these technologies to be incredibly powerful for building robust and scalable web applications.
+        In addition to python and Django,  I am proficient in HTML, CSS, and JavaScript, which enables me to create seamless user interfaces and responsive designs. 
+          </h2>
+    
+    
+  </div>
+  <div class="main">
+    <h1>BAHAUDDIN ZAKARIYA UNIVERSITY  </h1>
+    <h3> <i>MSCS, 2018-2020</h3>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <p style="font-size: 14px;">My research is based on random weight neural network and fuzzy rough set theory. I published my research paper in lgurjcsit </p></i>
+    <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    <h1>AIR UNIVERSITY</h1>
+    <h3> <i>BSCS, 2013-2017</h3>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <p style="font-size: 14px;"> I completed my degree with 3.72/4 CGPA. I create a context aware android application </p></i>
+    <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    <h1>PrOJECTS</h1>
+    <ul>
+        <li style="font-size: 14px;">
+            An Efficient classification model using fuzzy rough set theory and random weight neural network.
+        </li>
+        <li style="font-size: 14px;">Smart Context Aware Mobile Application</li>
+        <li style="font-size: 14px;">
+            Calorie calculator desktop app
+        </li>
+    </ul>
+    <h1>Tools</h1>
+    <p style="font-size: 14px;">I used different tools some of them are: </p>
+    <h3>
+    <ul class="ull" style="font-weight: bold;">
+        <div><li>visual studio </li>
+        <li>vs code </li>
+        <li>Django</li></div>
+        <div>
+        <li>Pycharm</li>
+        <li>Android Studio</li>
+        <li>Dev c++</li></div>
+
+        </ul>
+    </h3>
+  </div>
+
+</div>
+
+
+<div class="footer">
+  <h2>Contact me<br/>
+    <div> ramshajaved1353@gmail.com</span>
+
+  </h2>
+  
+</div>
+
+</body>
+</html>
